@@ -1,0 +1,256 @@
+/* Universal style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+.button-link {
+    background-color: #4361EE;
+    padding: 1rem 0.625rem;
+    color: white;
+    border-radius: 8px;
+    min-width: 160px;
+    display: inline-block;
+}
+
+.underline {
+    border-bottom: 2px solid #4361EE;
+}
+
+/* Header style */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 1.25rem 1.875rem;
+}
+
+/* Main Style */
+.main-subtitle {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: black;
+}
+
+/* Main header section style */
+.main-header {
+    background-color: #E9F4FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    min-height: 500px;
+    margin-bottom: 1.875rem;
+    gap: 1rem;
+    padding: 1.25rem 0.3rem;
+}
+
+.main-header h1 {
+    font-size: 2em;
+}
+
+.main-header img {
+    position: absolute;
+    bottom: -1.25rem;
+}
+
+/* Brand section Style */
+#brand-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 1rem;
+}
+
+#brand-section p {
+    font-size: 1em;
+    color: #1A2630;
+    line-height: 170%;
+}
+
+/* Services section style */
+#services-section {
+    background-color: #E9F4FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 1rem;
+}
+
+#services-section > div {
+    display: grid;
+    gap: 0.625rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.service-card {
+    position: relative;
+    color: white;
+}
+
+.service-card img {
+    filter: brightness(25%);
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-card p {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
+
+.service-card a {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: white;
+}
+
+/* Testimony section style */
+#testimony-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    padding: 0.625rem;
+}
+
+.testimony-card {
+    background-color: #E9F4FF;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 8px;
+}
+
+.quote-icon {
+    background-image: url("./assets/icons/quote.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 38px;
+    height: 31px;
+}
+
+.testimony-card blockquote {
+    line-height: 170%;
+    color: #1A2630;
+}
+
+.slider {
+    background-image: url("./assets/icons/dots-slide.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 44px;
+    height: 8px;
+}
+
+/* Contact section style */
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 3.125rem;
+    margin-bottom: 1.875rem;
+}
+
+#contact-section > div {
+    width: 100%;
+    background-color: #E9F4FF;
+    padding: 1.25rem;
+    min-height: calc(438px + 170px);
+    position: relative;
+}
+
+.contact-info h3{
+    color: black;
+    padding-left: 50px;
+}
+
+.contact-form {
+    width: 90%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+    position: absolute;
+    bottom: -1.25rem;
+    left: 1.25rem;
+}
+
+.contact-form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.contact-form input{
+    width: 100%;
+    min-height: 48px;
+    padding: 0.3rem;
+    border: 1px solid #E2E7ED;
+    border-radius: 8px;
+}
+
+.contact-form button {
+    border: none;
+}
+
+/* Blog section style */
+#blogs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin: 5rem 0;
+}
+
+#blogs-section article {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    border-radius: 15px;
+}
+
+#blogs-section article div {
+    border-radius: 0 0 15px 15px;
+    background-color: #E9F4FF;
+    padding: 2rem;
+}
+
+#blogs-section article a {
+    color: #4361EE;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+#blogs-section button {
+    border: none;
+}

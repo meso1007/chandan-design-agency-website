@@ -10,13 +10,15 @@
 <body>
     <header>
         <img src="./assets/icons/logo.svg" alt="Chandan Design Agency Logo">
-        <img src="./assets/icons/menu-hamburger.svg" alt="Hamburger menu">
+        <button class="hamburger-button" type="button" aria-label="Hamburger menu">
+            <img src="./assets/icons/menu-hamburger.svg" alt="Hamburger menu">
+        </button>
     </header>
     <main>
         <section class="main-header">
             <h1>Crafting Visual <span class="underline">Stories</span>: Unleashing Creative Essence</h1>
             <a class="button-link" href="#">Let's talk →</a>
-            <img src="./assets/imgs/woman.png" alt="Woman looking at color pallete">
+            <img src="./assets/imgs/woman-mobile.png" alt="Woman looking at color pallete">
         </section>
         <section id="brand-section">
             <h2 class="main-subtitle">Elevate Your <span class="underline">Brand Identity</span></h2>
@@ -25,7 +27,7 @@
                 Our passionate team of creative experts is committed to delivering innovative 
                 and tailor-made solutions that elevate your brand to new heights.
             </p>
-            <img src="./assets/imgs/presentation-1.png" alt="Man doing a presentation">
+            <img src="./assets/imgs/presentation-1-mobile.png" alt="Man doing a presentation">
             <p>
                 We believe that a strong brand is the cornerstone of every successful business. 
                 We are a passionate team of branding experts dedicated to 
@@ -41,29 +43,33 @@
             <h2 class="main-subtitle">Our <span class="underline">Services</span></h2>
             <div>
                 <div class="service-card">
-                    <img src="./assets/imgs/presentation-2.png" alt="Men drawing">
+                    <img src="./assets/imgs/presentation-5-mobile.png" alt="Men drawing">
                     <p>
+                        <span class="design-icon"></span>
                         Logo design
                     </p>
                     <a href="#">Request a quote →</a>
                 </div>
                 <div class="service-card">
-                    <img src="./assets/imgs/presentation-2.png" alt="Men drawing">
+                    <img src="./assets/imgs/presentation-5-mobile.png" alt="Men drawing">
                     <p>
+                        <span class="dev-icon"></span>
                         Development
                     </p>
                     <a href="#">Request a quote →</a>
                 </div>
                 <div class="service-card">
-                    <img src="./assets/imgs/presentation-2.png" alt="Men drawing">
+                    <img src="./assets/imgs/presentation-5-mobile.png" alt="Men drawing">
                     <p>
+                        <span class="design-icon"></span>
                         Ui/Ux Design
                     </p>
                     <a href="#">Request a quote →</a>
                 </div>
                 <div class="service-card">
-                    <img src="./assets/imgs/presentation-2.png" alt="Men drawing">
+                    <img src="./assets/imgs/presentation-5-mobile.png" alt="Men drawing">
                     <p>
+                        <span class="dev-icon"></span>
                         Digital Marketing
                     </p>
                     <a href="#">Request a quote →</a>
@@ -74,7 +80,7 @@
         <section id="testimony-section">
             <h2 class="main-subtitle">Happy <span class="underline">stories</span> of our clients</h2>
             <div class="testimony-card">
-                <img src="./assets/imgs/presentation-2.png" alt="Man showing to another man something on a screen">
+                <img src="./assets/imgs/presentation-2-mobile.png" alt="Man showing to another man something on a screen">
                 <div class="quote-icon"></div>
                 <blockquote>
                     With our extensive experience and deep understanding of brand strategy, design, and storytelling, 
@@ -90,15 +96,15 @@
                 <ul class="contact-info">
                     <li>
                         <h3>Office Address</h3>
-                        <address>66 Road Broklyn Street</address>
+                        <address class="info">66 Road Broklyn Street</address>
                     </li>
                     <li>
                         <h3>Contact No</h3>
-                        <p>(509) 5621912</p>
+                        <p class="info">(509) 562-1912</p>
                     </li>
                     <li>
                         <h3>Email</h3>
-                        <p>contact@creativedesign.com</p>
+                        <p class="info">contact@creativedesign.com</p>
                     </li>
                 </ul>
                 <form class="contact-form">
@@ -125,14 +131,14 @@
         <section id="blogs-section">
             <h2 class="main-subtitle">Stay <span class="underline">updated</span> with blogs</h2>
             <article>
-                <img src="./assets/imgs/presentation-3.png" alt="Man and woman high five">
+                <img src="./assets/imgs/presentation-3-mobile.png" alt="Man and woman high five">
                 <div class="article">
                     <h3>Basic rule of running web agency business</h3>
                     <a href="#">Read more →</a>
                 </div>
             </article>
             <article>
-                <img src="./assets/imgs/presentation-4.png" alt="Man writing in a white board">
+                <img src="./assets/imgs/presentation-4-mobile.png" alt="Man writing in a white board">
                 <div>
                     <h3>Understading different types of Marketing data</h3>
                     <a href="#">Read more →</a>
@@ -160,13 +166,14 @@
             </nav>
         </div>
         <form class="footer-form">
-            <h2>Subscribe to our Newsletter</h2>
+            <h3>Subscribe to our Newsletter</h3>
             <label for="email-footer">Email*</label>
             <input id="email-footer" type="text">
             <p>By subscribing you agree to our <a href="#">Terms & Conditions</a></p>
             <button class="button-link">Subscribe →</button>
         </form>
         <address>
+            <h3>Contact</h3>
             <span>66 Road Broklyn Street, 600</span>
             <a href="#">(509) 562-1912</a> <!-- href="tel:+15095621912"-->
             <a href="#">contact@creativedesign.com</a> <!-- href="mailto:contact@creativedesign.com"-->
@@ -181,7 +188,7 @@
                 <li><a href="#">Blog</a></li>
             </ul>
         </nav>
-        <p>&copy; 2023 Creative Design Agency. All Rights Reserved</p>
+        <p class="copyright-message">&copy; 2023 Creative Design Agency. All Rights Reserved</p>
     </footer>
 </body>
 </html>

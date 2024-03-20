@@ -19,6 +19,8 @@ html {
     min-width: 160px;
     display: inline-block;
     border: none;
+    font-size: 1.125rem;
+    font-weight: 700;
 }
 
 .underline {
@@ -34,9 +36,14 @@ header {
     padding: 1.25rem 1.875rem;
 }
 
+.hamburger-button {
+    border: none;
+    background-color: white;
+}
+
 /* Main Style */
 .main-subtitle {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
     color: black;
 }
@@ -113,8 +120,20 @@ header {
 
 .service-card p {
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     left: 10%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+}
+
+.design-icon {
+    content: url("./assets/icons/design.svg");
+}
+
+.dev-icon {
+    content: url("./assets/icons/development.svg");
 }
 
 .service-card a {
@@ -122,6 +141,7 @@ header {
     bottom: 10%;
     left: 10%;
     color: white;
+    font-size: 0.875rem;
 }
 
 /* Testimony section style */
@@ -155,7 +175,8 @@ header {
 
 .testimony-card blockquote {
     line-height: 170%;
-    color: #1A2630;
+    color: #4F5863;
+    font-size: 1.125rem;
 }
 
 .slider {
@@ -180,13 +201,37 @@ header {
     width: 100%;
     background-color: #E9F4FF;
     padding: 1.25rem;
-    min-height: calc(438px + 170px);
+    min-height: calc(438px + 270px);
     position: relative;
 }
 
 .contact-info h3{
-    color: black;
-    padding-left: 50px;
+    color: #1A2630;
+    font-size: 1.5rem;
+}
+
+.info {
+    margin: 0.5rem 0;
+    padding-left: calc(40px + 0.5rem);
+    color: #4F5863;
+    font-size: 1.125rem;
+    font-style: normal;
+}
+
+.contact-info li:first-child h3::before{
+    content: url("./assets/icons/location-bkg.svg");
+    padding-right: 0.5rem;
+    vertical-align: middle;
+}
+.contact-info li:nth-child(2) h3::before{
+    vertical-align: middle;
+    padding-right: 0.5rem;
+    content: url("./assets/icons/call-bkg.svg");
+}
+.contact-info li:last-child h3::before{
+    padding-right: 0.5rem;
+    vertical-align: middle;
+    content: url("./assets/icons/sms-bkg.svg");
 }
 
 .contact-form {
@@ -221,10 +266,6 @@ header {
     border-radius: 8px;
 }
 
-.contact-form button {
-    border: none;
-}
-
 /* Blog section style */
 #blogs-section {
     display: flex;
@@ -245,6 +286,10 @@ header {
     border-radius: 0 0 15px 15px;
     background-color: #E9F4FF;
     padding: 2rem;
+}
+
+#blogs-section article h3 {
+    font-size: 1.25rem;
 }
 
 #blogs-section article a {
@@ -287,6 +332,14 @@ footer address {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    font-style: normal;
+}
+
+footer address h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 
 footer address span:before {
@@ -314,12 +367,29 @@ footer nav ul {
     margin-top: 1rem;
 }
 
+footer nav h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
 /* Footer form style */
 .footer-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: start;
+}
+
+.footer-form h3 {
+    font-size: 1.25rem;
+}
+
+.footer-form p {
+    font-size: 0.813rem;
+}
+
+.footer-form p a {
+    text-decoration: underline;
 }
 
 .footer-form input {
@@ -329,4 +399,10 @@ footer nav ul {
     border: 1px solid #7B7C82;
     border-radius: 8px;
     background-color: inherit;
+    color: white;
+}
+
+.copyright-message {
+    font-size: 0.875;
+    text-align: center;
 }

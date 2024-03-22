@@ -97,6 +97,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
+    /* gap: 1rem; */
 }
 
 /* Section4 */
@@ -220,7 +221,8 @@ footer h5 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    vertical-align: top
+    vertical-align: top;
+    padding-top: 2rem;
 }
 
 .footer-1 ul {

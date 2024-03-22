@@ -26,7 +26,7 @@ section {
   padding: 135px;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: #e9f4ff;
 }
 
@@ -118,6 +118,17 @@ h2 {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+.sec4-container {
+  display: flex;
+  align-items: center;
+  background-color: #f4f6fe;
+  padding: 2.5rem 1.5rem;
+  line-height: 3rem;
+  text-align: left;
+  gap: 1rem;
+  border-radius: 8px;
 }
 
 /* Section5 */

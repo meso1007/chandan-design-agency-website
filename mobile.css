@@ -37,14 +37,14 @@
         border: none;
         font-size: 1.125rem;
         font-weight: 700;
-        margin-top: 0;
+        margin: 0;
     }
     
     .sec1-word h2 {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 1.5em;
-        margin-bottom: 0;
+        margin: 0;
     }
     
     .sec1-img {
@@ -67,16 +67,15 @@
     }
     
     .sec2-group {
-        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
+    
     .sec2-group img {
-        max-width: 250px;
+        max-width: 200px;
     }
-
+    
     .section-2 h2 {
         font-size: 1.5rem;
         font-weight: 700;
@@ -86,6 +85,7 @@
         font-size: 1em;
         color: #1A2630;
         line-height: 170%;
+        text-align: center;
     }
     
     /* Section 3 layout */
@@ -95,7 +95,8 @@
         align-items: center;
         text-align: center;
         gap: 1.25rem;
-        padding: 1rem;
+        padding: 2rem 0;
+        min-height: fit-content;
     }
 
     .section-3 h2 {
@@ -115,55 +116,41 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .section-3 .grid-container .grid-item:nth-child(n + 5) {
-        display: none;
+    .section-3 .grid-container .grid-item img {
+        max-width: 125px;
     }
    
     /* Testimony section style */
+    .section-4 h2,
     .section-4 h3 {
         font-size: 1.5rem;
         font-weight: 700;
+        margin: 5rem 0 0 0;
     }
-    #testimony-section {
+
+    .sliders {
+        display: none;
+    }
+
+    .slider-contents {
+        width: 90%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 1rem;
-        gap: 1rem;
+    }
+
+    .sec4-container {
         padding: 0.625rem;
+        width: 100%;
     }
     
-    .testimony-card {
-        background-color: #E9F4FF;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        border-radius: 8px;
+    .sec4-container img {
+        max-width: 200px;
     }
-    
-    .quote-icon {
-        background-image: url("./assets/icons/quote.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 38px;
-        height: 31px;
-    }
-    
-    .testimony-card blockquote {
-        line-height: 170%;
-        color: #4F5863;
+
+    .sec4-container p {
         font-size: 1.125rem;
-    }
-    
-    .slider {
-        background-image: url("./assets/icons/dots-slide.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 44px;
-        height: 8px;
+        line-height: 170%;
+        margin-top: 1rem;
     }
     
     /* Section 5 style */
@@ -176,12 +163,18 @@
         margin-top: 3.125rem;
         margin-bottom: 5rem;
         position: relative;
-        min-height: calc(564px + 388px);
+        min-height: calc(413px + 308px);
     }
     
     .section-5 ul {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         padding: 1.25rem;
+    }
+
+    .section-5 ul li {
+        margin: 0;
     }
        
     .section-5 ul .with-img {
@@ -205,6 +198,7 @@
         right: 50%;
         transform: translateX(-50%);
         box-shadow: 5px 5px 20px -11px #000000;
+        height: fit-content;
     }
 
     #contactus button {
@@ -228,13 +222,14 @@
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 1.5em;
+        margin: 0;
     }
     
     .section-6 .img-container {
-        display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 2rem;
-        max-width: 250px;
+        min-width: 600px;
     }
     
     .section-6 button {
@@ -247,6 +242,7 @@
     /* Footer style */
     .footer-container {
         padding: 1rem;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.75rem;

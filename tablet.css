@@ -171,104 +171,28 @@
 
   /* Footer Style */
   footer {
-    background-color: black;
-    color: white;
     min-height: 605px;
+    position: relative;
   }
 
   .footer-container {
     display: grid;
-    grid-template-rows: 2fr 3fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "footer-1 footer-1 footer-2 footer-2 footer-2 footer-2"
+      "footer-3 footer-3 footer-3 footer-4 footer-4 footer-4";
+    padding: 2rem;
+    gap: 2rem;
   }
   .footer-1 {
     grid-area: footer-1;
   }
   .footer-2 {
-    grid-area: footer-2;
-  }
-  .footer-3 {
     grid-area: footer-3;
   }
-  .footer-4 {
+  .footer-3 {
     grid-area: footer-4;
   }
-  */ .footer-grid1 {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    padding: 5%;
-  }
-
-  .footer-griditem1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 40%;
-  }
-
-  .footer-griditems {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 6%;
-  }
-  .company-logo {
-    width: 20%;
-  }
-
-  .footer-griditem2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 7%;
-  }
-  .footer-bold {
-    font-weight: bold;
-    font-size: 1.25rem;
-  }
-  #email2-input {
-    display: block;
-    background-color: black;
-    border-radius: 5px;
-    width: 100%;
-    border: solid 1px white;
-    padding: 1rem;
-  }
-  .button-footer {
-    border: solid 1px blue;
-    border-radius: 10px;
-    background-color: blue;
-    color: white;
-    padding: 0.75rem 2rem;
-    align-self: flex-start;
-  }
-
-  .footer-grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5%;
-  }
-
-  .footer-griditem3 ul li {
-    padding-top: 5%;
-  }
-
-  .footer-griditem3 p {
-    font-weight: bold;
-    font-size: 1.25rem;
-  }
-
-  .footer-griditem4 ul li {
-    padding-top: 5%;
-  }
-
-  .footer-griditem4 p {
-    font-weight: bold;
-    font-size: 1.25rem;
-  }
-  footer > p {
-    text-align: center;
-    margin-top: 5%;
+  .footer-4 {
+    grid-area: footer-2;
   }
 }

@@ -93,10 +93,10 @@ h2 {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  /* gap: 1rem; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    /* gap: 1rem; */
 }
 
 /* Section4 */
@@ -215,10 +215,11 @@ footer h5 {
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  vertical-align: top;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    vertical-align: top;
+    padding-top: 2rem;
 }
 
 .footer-1 ul {
